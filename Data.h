@@ -14,10 +14,10 @@ class Data {
     friend ostream& operator << (ostream& os, Data a);
 public:
     string playerName;
-    double shotClock;
+    string shotClock;
 
     Data();
-    Data(string playerName, double shotClock);
+    Data(string playerName, string shotClock);
     friend bool operator < (const Data &d, const Data & d2);
     friend bool operator > (const Data &d, const Data & d2);
     void setPlayerName (string name) {
@@ -26,10 +26,10 @@ public:
     string getPlayerName() {
         return playerName;
     }
-    void setShotClock (int t) {
+    void setShotClock (string t) {
         shotClock = t;
     }
-    double getShotClock() {
+    string getShotClock() {
         return shotClock;
     }
 

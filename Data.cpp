@@ -8,27 +8,26 @@
 #include <string>
 using namespace std;
 
-Data::Data() { //default constructor
+Data::Data() {                          // default constructor
     playerName = "";
-    shotClock = 0;
+    shotClock = "";
 }
-Data::Data(string name, double t) { //alternate constructor
+Data::Data(string name, string t) {             // alternate constructor
     playerName = name;
     shotClock = t;
 }
 
 
-bool operator > (const Data &d, const Data & d2) { // > overloader
+bool operator > (const Data &d, const Data & d2) {          // operator overload 1
     return d.shotClock > d2.shotClock;
 }
 
 
-bool operator < (const Data &d, const Data &d2){ // < overloader
+bool operator < (const Data &d, const Data &d2){            // operator overload 2
     return d.shotClock < d2.shotClock;
 }
 
-ostream& operator << (ostream& os, const Data a){ //overloaded to print to the files
-    os << "Player Name: " << a.playerName << " Time Left on Shot Clock: " << a.shotClock << endl;
-    cout << "Printing" << endl;
+ostream& operator << (ostream& os, const Data a){               // file stream operator overload
+    os << a.playerName <<  a.shotClock << endl;
     return os;
 }
