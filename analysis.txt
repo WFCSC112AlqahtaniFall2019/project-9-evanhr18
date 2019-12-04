@@ -1,0 +1,10 @@
+Bubble Sort has a worst-case and average complexity of O(n^2).
+This is more way more complex than most other sorting algorithms, which causes Bubble Sort to take considerably longer in sorting bigger lists.
+However, even other sorting algorithms with similar complexity, such as insertion sort, tend to run much faster than Bubble Sort, meaning that Bubble Sort is not a practical sorting algorithm.
+The advantage of bubble sort, however, is that in the best case scenario, when the list is already sorted, it has a complexity of O(n), while other algorithms will continue to go through their entire algorithms regardless of if the list is already sorted or not.
+Generally, avoid bubble sort when dealing with large sets of data.
+
+Selection Sort also has a complexity of O(n^2).
+This means that, like bubble sort, selection sort is not a great algorithm to use for large sets of data.
+Also similarly, selection sort takes longer to run than insertion sort, another algorithm with O9n^2) complexity.
+Selection sort is helpful though because it is an extremely simple algorithm and can be advantageous to use when memory is limited.

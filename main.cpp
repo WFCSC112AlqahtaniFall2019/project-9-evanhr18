@@ -63,7 +63,7 @@ int main() {
 
     }
 
-    for (int i = 0; i < 100; i++){
+    for (int i = 0; i < 64000; i++){
 
         dataV_Q.push_back(dataV.at(i));
         dataV_M.push_back(dataV.at(i));
@@ -72,7 +72,7 @@ int main() {
 
     }
 
-    for (int k = 0; k < 100; k++){
+    for (int k = 0; k < 64000; k++){
         intV.push_back((rand() % 100) + 1);
     }
 
